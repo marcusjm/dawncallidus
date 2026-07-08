@@ -28,6 +28,12 @@
     }
   {%- endif -%}
 
+  .callidus-logo-fallback svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   {%- if section.settings.menu_type_desktop != "drawer" -%}
     @media screen and (min-width: 990px) {
       header-drawer {
@@ -172,7 +178,9 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper callidus-logo-fallback" style="width: {{ settings.logo_width }}px;">
+            {{- 'callidus-logo.svg' | inline_asset_content -}}
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -215,7 +223,9 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper callidus-logo-fallback" style="width: {{ settings.logo_width }}px;">
+            {{- 'callidus-logo.svg' | inline_asset_content -}}
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -433,6 +443,8 @@
     "name": {{ shop.name | json }},
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+    {% else %}
+      "logo": {{ 'callidus-logo.svg' | asset_url | json }},
     {% endif %}
     "sameAs": [
       {{ settings.social_twitter_link | json }},

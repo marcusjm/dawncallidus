@@ -1,0 +1,78 @@
+<div
+  class="wave-divider color-{{ section.settings.color_scheme }}{% if section.settings.flip_vertical %} wave-divider--flipped{% endif %}"
+  style="--wave-divider-height: {{ section.settings.height }}px;"
+>
+  <svg
+    class="wave-divider__svg"
+    viewBox="0 0 1440 120"
+    preserveAspectRatio="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,20 1440,60 L1440,120 L0,120 Z"></path>
+  </svg>
+</div>
+
+{%- style -%}
+  .wave-divider {
+    display: block;
+    line-height: 0;
+    background: transparent;
+  }
+
+  .wave-divider__svg {
+    display: block;
+    width: 100%;
+    height: var(--wave-divider-height, 100px);
+  }
+
+  .wave-divider__svg path {
+    fill: rgb(var(--color-background));
+  }
+
+  .wave-divider--flipped .wave-divider__svg {
+    transform: scaleY(-1);
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "t:sections.wave-divider.name",
+  "tag": "section",
+  "class": "section section--wave-divider",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-8"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "min": 20,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 100,
+      "label": "t:sections.wave-divider.settings.height.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_vertical",
+      "default": false,
+      "label": "t:sections.wave-divider.settings.flip_vertical.label",
+      "info": "t:sections.wave-divider.settings.flip_vertical.info"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.wave-divider.presets.name"
+    }
+  ]
+}
+{% endschema %}

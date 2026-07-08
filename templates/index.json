@@ -6,16 +6,16 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Vi hjälper dig med vattenrening och att rena ditt vatten.",
             "heading_size": "h0"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Vattenanalys",
+            "button_link_1": "shopify://pages/vattenanalys",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -27,16 +27,135 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 30,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
         "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-10",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "wave_divider_1": {
+      "type": "wave-divider",
+      "settings": {
+        "color_scheme": "scheme-6",
+        "height": 100,
+        "flip_vertical": false
+      }
+    },
+    "yellow_banner": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "75 år jubileum",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Utnyttja vår 75-årskampanj!",
+            "heading_size": "h1"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Läs mer",
+            "button_link": "shopify://pages/jubileum",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption",
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-6",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "wave_divider_2": {
+      "type": "wave-divider",
+      "settings": {
+        "color_scheme": "scheme-7",
+        "height": 80,
+        "flip_vertical": false
+      }
+    },
+    "content_section": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Orolig för ditt vatten?",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Låt oss ta hand om det!",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>På Callidus är vi specialister på vattenrening med över 200 års samlad erfarenhet. Vi utreder grundligt om det är något fel med ditt vatten och ser till att du får rätt filter eller vattenrenare installerad.</p><p>Få en skräddarsydd lösning för ditt vatten. Klicka på guiden och börja nu.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Starta guide",
+            "button_link": "shopify://pages/guide",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-7",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "wave_divider_3": {
+      "type": "wave-divider",
+      "settings": {
+        "color_scheme": "scheme-8",
+        "height": 120,
+        "flip_vertical": false
       }
     },
     "featured_collection": {
@@ -70,6 +189,11 @@
   },
   "order": [
     "image_banner",
+    "wave_divider_1",
+    "yellow_banner",
+    "wave_divider_2",
+    "content_section",
+    "wave_divider_3",
     "featured_collection"
   ]
 }
