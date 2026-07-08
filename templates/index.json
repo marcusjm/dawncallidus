@@ -49,6 +49,14 @@
         "show_text_below": false
       }
     },
+    "wave_divider_PqYKAJ": {
+      "type": "wave-divider",
+      "settings": {
+        "color_scheme": "scheme-6",
+        "height": 100,
+        "flip_vertical": true
+      }
+    },
     "yellow_banner": {
       "type": "rich-text",
       "blocks": {
@@ -95,6 +103,7 @@
     },
     "wave_divider_1": {
       "type": "wave-divider",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-6",
         "height": 100,
@@ -103,6 +112,7 @@
     },
     "wave_divider_2": {
       "type": "wave-divider",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-7",
         "height": 80,
@@ -163,7 +173,7 @@
     "wave_divider_3": {
       "type": "wave-divider",
       "settings": {
-        "color_scheme": "scheme-8",
+        "color_scheme": "scheme-7",
         "height": 120,
         "flip_vertical": true
       }
@@ -199,6 +209,7 @@
   },
   "order": [
     "image_banner",
+    "wave_divider_PqYKAJ",
     "yellow_banner",
     "wave_divider_1",
     "wave_divider_2",
