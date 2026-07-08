@@ -123,23 +123,23 @@
         "heading_jqUiWK": {
           "type": "heading",
           "settings": {
-            "heading": "Bild med text",
+            "heading": "Callidus fyller 75",
             "heading_size": "h1"
           }
         },
         "text_ctVkdt": {
           "type": "text",
           "settings": {
-            "text": "<p>Para ihop text med en bild för att ge fokus åt vald produkt, produktserie eller blogginlägg. Lägg till information om tillgänglighet, stil eller tillhandahåll en recension.</p>",
+            "text": "<p>Det firar vi med mängder av erbjudanden. Prenumerera på vårt nyhetsbrev.</p>",
             "text_style": "body"
           }
         },
         "button_RHLkhD": {
           "type": "button",
           "settings": {
-            "button_label": "Knappetikett",
+            "button_label": "Gå till kampanjsidan",
             "button_link": "",
-            "button_style_secondary": false
+            "button_style_secondary": true
           }
         }
       },
@@ -159,8 +159,8 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-7",
+        "color_scheme": "scheme-7",
         "padding_top": 36,
         "padding_bottom": 36
       }
