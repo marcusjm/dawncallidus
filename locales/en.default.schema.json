@@ -693,6 +693,10 @@
         "flip_vertical": {
           "label": "Flip vertically",
           "info": "Point the wave up or down depending on which section it sits above or below."
+        },
+        "overlap_previous_section": {
+          "label": "Overlap previous section",
+          "info": "Pull the wave up over the bottom of the previous section, so its transparent areas reveal what's behind."
         }
       },
       "presets": {

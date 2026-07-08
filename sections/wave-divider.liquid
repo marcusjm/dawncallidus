@@ -1,5 +1,5 @@
 <div
-  class="wave-divider color-{{ section.settings.color_scheme }}{% if section.settings.flip_vertical %} wave-divider--flipped{% endif %}"
+  class="wave-divider color-{{ section.settings.color_scheme }}{% if section.settings.flip_vertical %} wave-divider--flipped{% endif %}{% if section.settings.overlap_previous_section %} wave-divider--overlap{% endif %}"
   style="--wave-divider-height: {{ section.settings.height }}px;"
 >
   <svg
@@ -34,6 +34,14 @@
   .wave-divider--flipped .wave-divider__svg {
     transform: scaleY(-1);
   }
+
+  {%- if section.settings.overlap_previous_section %}
+    #shopify-section-{{ section.id }} {
+      position: relative;
+      z-index: 2;
+      margin-top: -{{ section.settings.height }}px;
+    }
+  {%- endif %}
 {%- endstyle -%}
 
 {% schema %}
@@ -67,6 +75,13 @@
       "default": false,
       "label": "t:sections.wave-divider.settings.flip_vertical.label",
       "info": "t:sections.wave-divider.settings.flip_vertical.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "overlap_previous_section",
+      "default": false,
+      "label": "t:sections.wave-divider.settings.overlap_previous_section.label",
+      "info": "t:sections.wave-divider.settings.overlap_previous_section.info"
     }
   ],
   "presets": [
