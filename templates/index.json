@@ -52,7 +52,7 @@
     "wave_divider_PqYKAJ": {
       "type": "wave-divider",
       "settings": {
-        "color_scheme": "scheme-7",
+        "color_scheme": "scheme-3",
         "height": 100,
         "flip_vertical": false,
         "overlap_previous_section": true
@@ -96,7 +96,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-7",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 60
@@ -167,7 +167,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-7",
+        "color_scheme": "scheme-6",
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 60
@@ -176,7 +176,7 @@
     "wave_divider_3": {
       "type": "wave-divider",
       "settings": {
-        "color_scheme": "scheme-7",
+        "color_scheme": "scheme-6",
         "height": 120,
         "flip_vertical": true,
         "overlap_previous_section": false
