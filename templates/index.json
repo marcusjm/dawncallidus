@@ -185,10 +185,10 @@
     "wave_divider_xxa3gW": {
       "type": "wave-divider",
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-7",
         "height": 120,
         "flip_vertical": false,
-        "overlap_previous_section": false
+        "overlap_previous_section": true
       }
     },
     "featured_collection": {
@@ -206,7 +206,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-7",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
