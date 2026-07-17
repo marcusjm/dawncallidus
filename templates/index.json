@@ -40,12 +40,12 @@
         "image_overlay_opacity": 30,
         "image_height": "large",
         "image_behavior": "none",
-        "desktop_content_position": "middle-right",
+        "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": true,
         "color_scheme": "scheme-10",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
@@ -53,7 +53,7 @@
       "type": "wave-divider",
       "settings": {
         "color_scheme": "scheme-3",
-        "height": 100,
+        "height": 20,
         "flip_vertical": false,
         "overlap_previous_section": true
       }
