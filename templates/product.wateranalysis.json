@@ -29,9 +29,19 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
+          }
+        },
+        "collapsible_tab_dhUqcY": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifikationer",
+            "icon": "question_mark",
+            "content": "{{ product.metafields.custom.specifications | metafield_tag }}",
+            "page": ""
           }
         },
         "text_bzmmiE": {
@@ -48,6 +58,10 @@
             "text_style": "subtitle"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -59,23 +73,10 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "collapsible_tab_dhUqcY": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Specifikationer",
-            "icon": "question_mark",
-            "content": "{{ product.metafields.custom.specifications | metafield_tag }}",
-            "page": ""
           }
         }
       },
@@ -84,20 +85,20 @@
         "title",
         "price",
         "variant_picker",
+        "collapsible_tab_dhUqcY",
         "text_bzmmiE",
         "text_GYRj3p",
+        "description",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share",
-        "collapsible_tab_dhUqcY"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_size": "small",
         "constrain_to_viewport": true,
-        "media_fit": "contain",
+        "media_fit": "cover",
         "gallery_layout": "stacked",
         "mobile_thumbnails": "hide",
         "media_position": "left",
