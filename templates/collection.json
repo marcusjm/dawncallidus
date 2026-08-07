@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -21,10 +22,10 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 16,
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -106,71 +107,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "wave_divider_jQjLwt": {
-      "type": "wave-divider",
-      "name": "t:sections.wave-divider.presets.name",
-      "settings": {
-        "color_scheme": "",
-        "height": 100,
-        "flip_vertical": true,
-        "overlap_previous_section": false
-      }
-    },
-    "image_with_text_C7VFft": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_jqUiWK": {
-          "type": "heading",
-          "settings": {
-            "heading": "Callidus fyller 75",
-            "heading_size": "h1"
-          }
-        },
-        "text_ctVkdt": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Det firar vi med mängder av erbjudanden. Prenumerera på vårt nyhetsbrev.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_RHLkhD": {
-          "type": "button",
-          "settings": {
-            "button_label": "Gå till kampanjsidan",
-            "button_link": "",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_jqUiWK",
-        "text_ctVkdt",
-        "button_RHLkhD"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Screenshot_2026-07-08_at_12.48.20.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-7",
-        "color_scheme": "scheme-7",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "featured_product_HYNxth",
-    "wave_divider_jQjLwt",
-    "image_with_text_C7VFft"
+    "featured_product_HYNxth"
   ]
 }
