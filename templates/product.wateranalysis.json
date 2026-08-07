@@ -67,7 +67,7 @@
           "settings": {
             "heading": "Rad som kan döljas",
             "icon": "check_mark",
-            "content": "",
+            "content": "{{ product.metafields.custom.specifications | metafield_tag }}",
             "page": ""
           }
         }
