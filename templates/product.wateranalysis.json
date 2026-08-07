@@ -34,6 +34,13 @@
             "swatch_shape": "circle"
           }
         },
+        "text_bzmmiE": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>OBS! Den här analysen gäller E-Vatten.</strong> För övriga analystyper, kontakta Callidus AB på info@callidus.se",
+            "text_style": "body"
+          }
+        },
         "text_GYRj3p": {
           "type": "text",
           "settings": {
@@ -77,6 +84,7 @@
         "title",
         "price",
         "variant_picker",
+        "text_bzmmiE",
         "text_GYRj3p",
         "quantity_selector",
         "buy_buttons",
