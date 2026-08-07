@@ -34,6 +34,13 @@
             "swatch_shape": "circle"
           }
         },
+        "text_GYRj3p": {
+          "type": "text",
+          "settings": {
+            "text": "Vår samarbetslabb SGS Sweden har inlämningsställen för vattenprover. Du kan hitta dom här. Välj med fördel ett inlämningsställe om du har ett i närheten för att garantera att provet kommer fram till labbet i tid. Väljer du SGS som inlämningsställe så tillkommer inga avgifter för frakt. Väljer du postombud så tillkommer 50kr i frakt. <a href=\"https://www.google.com/maps/d/viewer?mid=1GmPMjBEOCOx_DndQgBQm2sBwOog&ll=57.8739761486543%2C13.40116893425217&z=7&utm_source=sgs-website&utm_medium=campaign-page&utm_campaign=https%3A%2F%2Fwww.sgsgroup.se%2Fen%2Fcampaigns%2Fsgs-sweden%2Fom-oss\" target=\"_blank\" title=\"https://www.google.com/maps/d/viewer?mid=1GmPMjBEOCOx_DndQgBQm2sBwOog&ll=57.8739761486543%2C13.40116893425217&z=7&utm_source=sgs-website&utm_medium=campaign-page&utm_campaign=https%3A%2F%2Fwww.sgsgroup.se%2Fen%2Fcampaigns%2Fsgs-sweden%2Fom-oss\">Hitta din närmaste inlämningsplats</a>",
+            "text_style": "subtitle"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -54,13 +61,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "text_GYRj3p": {
-          "type": "text",
-          "settings": {
-            "text": "Vår samarbetslabb SGS Sweden har inlämningsställen för vattenprover. Du kan hitta dom här. Välj med fördel ett inlämningsställe om du har ett i närheten för att garantera att provet kommer fram till labbet i tid. <a href=\"https://www.google.com/maps/d/viewer?mid=1GmPMjBEOCOx_DndQgBQm2sBwOog&ll=57.8739761486543%2C13.40116893425217&z=7&utm_source=sgs-website&utm_medium=campaign-page&utm_campaign=https%3A%2F%2Fwww.sgsgroup.se%2Fen%2Fcampaigns%2Fsgs-sweden%2Fom-oss\" target=\"_blank\" title=\"https://www.google.com/maps/d/viewer?mid=1GmPMjBEOCOx_DndQgBQm2sBwOog&ll=57.8739761486543%2C13.40116893425217&z=7&utm_source=sgs-website&utm_medium=campaign-page&utm_campaign=https%3A%2F%2Fwww.sgsgroup.se%2Fen%2Fcampaigns%2Fsgs-sweden%2Fom-oss\">Hitta din närmaste inlämningsplats</a>",
-            "text_style": "subtitle"
-          }
         }
       },
       "block_order": [
@@ -68,16 +68,16 @@
         "title",
         "price",
         "variant_picker",
+        "text_GYRj3p",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "text_GYRj3p"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
