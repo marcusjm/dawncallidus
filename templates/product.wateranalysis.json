@@ -65,8 +65,8 @@
         "collapsible_tab_dhUqcY": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Rad som kan döljas",
-            "icon": "check_mark",
+            "heading": "Specifikationer",
+            "icon": "question_mark",
             "content": "{{ product.metafields.custom.specifications | metafield_tag }}",
             "page": ""
           }
