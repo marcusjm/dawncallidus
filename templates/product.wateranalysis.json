@@ -47,7 +47,7 @@
         "text_bzmmiE": {
           "type": "text",
           "settings": {
-            "text": "<strong>OBS! Den här analysen gäller E-Vatten.</strong> För övriga analystyper, kontakta Callidus AB på info@callidus.se",
+            "text": "<strong>Observera: Denna analys är avsedd för privatpersoner med egen brunn (E-vatten). </strong>Driver du en verksamhet, samfällighet eller behöver ett A-vattenprov? Kontakta oss direkt på info@callidus.se eller ring 031-99 77 00, så hjälper vi dig att beställa rätt analys.",
             "text_style": "body"
           }
         },
