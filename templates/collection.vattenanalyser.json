@@ -75,7 +75,7 @@
         "button_AeVxch": {
           "type": "button",
           "settings": {
-            "button_label": "Knappetikett",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
