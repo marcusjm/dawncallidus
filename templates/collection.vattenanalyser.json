@@ -46,6 +46,59 @@
         "accessibility_info": "Bildspel om vårt varumärke"
       }
     },
+    "wave_divider_Yr7d8z": {
+      "type": "wave-divider",
+      "name": "t:sections.wave-divider.presets.name",
+      "settings": {
+        "color_scheme": "scheme-6",
+        "height": 100,
+        "flip_vertical": true,
+        "overlap_previous_section": false
+      }
+    },
+    "rich_text_7Y3Gkb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YgrXkQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Välkommen till Callidus Provshop",
+            "heading_size": "h1"
+          }
+        },
+        "text_8WRpEj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi inleder nu vår testfas för vår nya kundportal och webshop. Här kommer du kunna köpa alla prover.&nbsp;<strong><br/><br/>Vid köp av Trygghetspaketet samt Mikrobiologiska Testet så skickas paketen direkt från SGS. </strong>Det vanliga flödet gäller då inte utan man jobbar med det tidigare flödet.</p>"
+          }
+        },
+        "button_AeVxch": {
+          "type": "button",
+          "settings": {
+            "button_label": "Knappetikett",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YgrXkQ",
+        "text_8WRpEj",
+        "button_AeVxch"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "disabled": true,
@@ -108,6 +161,8 @@
   },
   "order": [
     "slideshow_DbYfKt",
+    "wave_divider_Yr7d8z",
+    "rich_text_7Y3Gkb",
     "banner",
     "product-grid",
     "featured_collection_dUWRTb"
