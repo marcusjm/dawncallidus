@@ -19,7 +19,7 @@
             "image_overlay_opacity": 0,
             "heading": "Välkommen till Callidus Testfas",
             "heading_size": "h2",
-            "subheading": "Vi testar just nu vårt nya system för att köpa vattenanalyser.",
+            "subheading": "Här kan du beställa våra vattenanalyser.",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
@@ -89,6 +89,7 @@
         "text_8WRpEj",
         "button_AeVxch"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
