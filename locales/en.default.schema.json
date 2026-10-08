@@ -374,6 +374,19 @@
   },
   "sections": {
     "all": {
+      "box_shape": {
+        "label": "Box shape",
+        "info": "Curved corners round the top-left and bottom-right corners, like the Callidus website.",
+        "options__1": {
+          "label": "Theme default"
+        },
+        "options__2": {
+          "label": "Curved corners"
+        }
+      },
+      "box_curve_size": {
+        "label": "Curve size"
+      },
       "animation": {
         "content": "Animations",
         "image_behavior": {
@@ -699,13 +712,20 @@
         "height": {
           "label": "Wave height"
         },
+        "mobile_height": {
+          "label": "Wave height on mobile"
+        },
         "flip_vertical": {
           "label": "Flip vertically",
-          "info": "Point the wave up or down depending on which section it sits above or below."
+          "info": "Off: the wave fills along the bottom and rises into the section above. On: it fills along the top and hangs down into the section below."
         },
         "overlap_previous_section": {
           "label": "Overlap previous section",
           "info": "Pull the wave up over the bottom of the previous section, so its transparent areas reveal what's behind."
+        },
+        "overlap_next_section": {
+          "label": "Overlap next section",
+          "info": "Pull the next section up under the wave, so its transparent areas reveal what's behind. Use with a flipped wave."
         }
       },
       "presets": {
@@ -1048,6 +1068,19 @@
         }
       },
       "settings": {
+        "center_content": {
+          "label": "Center footer content"
+        },
+        "show_top_wave": {
+          "label": "Show wave above footer",
+          "info": "Adds a layered wave along the top edge of the footer. Pick the color of the section above so it flows into the footer."
+        },
+        "top_wave_color_scheme": {
+          "label": "Wave color"
+        },
+        "top_wave_height": {
+          "label": "Wave height"
+        },
         "newsletter_enable": {
           "label": "Email signup"
         },
@@ -1093,6 +1126,13 @@
     "header": {
       "name": "Header",
       "settings": {
+        "show_bottom_wave": {
+          "label": "Show wave below header",
+          "info": "Adds a layered wave along the bottom edge of the header, in the header's color."
+        },
+        "bottom_wave_height": {
+          "label": "Wave height"
+        },
         "logo_help": {
           "content": "Edit your logo in [theme settings](/editor?context=theme&category=logo)"
         },

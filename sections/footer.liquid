@@ -25,9 +25,62 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {%- if section.settings.show_top_wave %}
+    .footer {
+      position: relative;
+    }
+
+    .footer .footer__wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+      background: transparent;
+      pointer-events: none;
+    }
+  {%- endif %}
+
+  {%- if section.settings.center_content %}
+    .footer .footer-block,
+    .footer .footer-block__details-content,
+    .footer .footer__content-bottom {
+      text-align: center;
+    }
+
+    .footer .footer-block__details-content .list-menu__item--link {
+      justify-content: center;
+    }
+
+    .footer .footer-block__details-content.list-unstyled,
+    .footer .footer__list-social {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 750px) {
+      .footer .footer__content-top .footer__blocks-wrapper {
+        justify-content: space-between;
+      }
+    }
+  {%- endif %}
+
+  .footer .callidus-logo-fallback svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  {%- if section.settings.show_top_wave -%}
+    <div
+      class="footer__wave color-{{ section.settings.top_wave_color_scheme }}"
+      style="--wave-height: {{ section.settings.top_wave_height }}px; --wave-height-mobile: {{ section.settings.top_wave_height | times: 0.5 | round }}px;"
+    >
+      {%- render 'wave', shape: 'above' -%}
+    </div>
+  {%- endif -%}
   {%- liquid
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -150,7 +203,12 @@
                           >
                         </div>
                       {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                        <div
+                          class="footer-block__image-wrapper callidus-logo-fallback"
+                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                        >
+                          {{- 'callidus-logo.svg' | inline_asset_content -}}
+                        </div>
                       {%- endif -%}
                     </div>
                 {%- endcase -%}
@@ -429,6 +487,35 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "center_content",
+      "default": false,
+      "label": "t:sections.footer.settings.center_content.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_top_wave",
+      "default": false,
+      "label": "t:sections.footer.settings.show_top_wave.label",
+      "info": "t:sections.footer.settings.show_top_wave.info"
+    },
+    {
+      "type": "color_scheme",
+      "id": "top_wave_color_scheme",
+      "label": "t:sections.footer.settings.top_wave_color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "top_wave_height",
+      "min": 10,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 50,
+      "label": "t:sections.footer.settings.top_wave_height.label"
     },
     {
       "type": "header",

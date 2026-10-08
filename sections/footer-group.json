@@ -2,27 +2,96 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "contact_band": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kontakta oss:",
+            "heading_size": "hxl"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ring <a href=\"tel:+4631997700\">031-99 77 00</a> eller mejla <a href=\"mailto:info@callidus.se\">info@callidus.se</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
     "footer": {
       "type": "footer",
-      "blocks": {},
-      "block_order": [],
+      "blocks": {
+        "logo": {
+          "type": "image",
+          "settings": {
+            "image_width": 180,
+            "alignment": "center"
+          }
+        },
+        "menu_about": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Mer om Callidus",
+            "menu": "footer-mer-om-callidus"
+          }
+        },
+        "menu_services": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Våra tjänster",
+            "menu": "footer-vara-tjanster"
+          }
+        },
+        "contact": {
+          "type": "text",
+          "settings": {
+            "heading": "Callidus AB",
+            "subtext": "<p>Bangårdsvägen 31, 428 36 Kållered<br>031-99 77 00<br><a href=\"mailto:info@callidus.se\">info@callidus.se</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "logo",
+        "menu_about",
+        "menu_services",
+        "contact"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
+        "color_scheme": "scheme-11",
+        "center_content": true,
+        "show_top_wave": true,
+        "top_wave_color_scheme": "scheme-8",
+        "top_wave_height": 50,
+        "newsletter_enable": false,
+        "newsletter_heading": "Prenumerera på våra nyheter",
+        "enable_follow_on_shop": false,
         "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 96,
+        "padding_bottom": 24
       }
     }
   },
   "order": [
+    "contact_band",
     "footer"
   ]
 }

@@ -43,6 +43,8 @@
         "desktop_content_position": "middle-right",
         "desktop_content_alignment": "left",
         "show_text_box": true,
+        "box_shape": "curved",
+        "box_curve_size": 60,
         "color_scheme": "scheme-10",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "left",
@@ -53,9 +55,11 @@
       "type": "wave-divider",
       "settings": {
         "color_scheme": "scheme-6",
-        "height": 100,
+        "height": 60,
+        "mobile_height": 25,
         "flip_vertical": false,
-        "overlap_previous_section": true
+        "overlap_previous_section": true,
+        "overlap_next_section": false
       }
     },
     "yellow_banner": {
@@ -104,20 +108,13 @@
     },
     "wave_divider_1": {
       "type": "wave-divider",
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-6",
-        "height": 100,
-        "flip_vertical": true
-      }
-    },
-    "wave_divider_2": {
-      "type": "wave-divider",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-7",
-        "height": 80,
-        "flip_vertical": false
+        "height": 60,
+        "mobile_height": 25,
+        "flip_vertical": true,
+        "overlap_previous_section": false,
+        "overlap_next_section": true
       }
     },
     "content_section": {
@@ -175,8 +172,11 @@
       "type": "wave-divider",
       "settings": {
         "color_scheme": "scheme-7",
-        "height": 120,
-        "flip_vertical": true
+        "height": 60,
+        "mobile_height": 25,
+        "flip_vertical": true,
+        "overlap_previous_section": false,
+        "overlap_next_section": true
       }
     },
     "featured_collection": {
@@ -194,7 +194,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-12",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -213,7 +213,6 @@
     "wave_divider_PqYKAJ",
     "yellow_banner",
     "wave_divider_1",
-    "wave_divider_2",
     "content_section",
     "wave_divider_3",
     "featured_collection"

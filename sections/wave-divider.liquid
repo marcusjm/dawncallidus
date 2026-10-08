@@ -1,17 +1,12 @@
 <div
-  class="wave-divider color-{{ section.settings.color_scheme }}{% if section.settings.flip_vertical %} wave-divider--flipped{% endif %}{% if section.settings.overlap_previous_section %} wave-divider--overlap{% endif %}"
-  style="--wave-divider-height: {{ section.settings.height }}px;"
+  class="wave-divider color-{{ section.settings.color_scheme }}"
+  style="--wave-height: {{ section.settings.height }}px; --wave-height-mobile: {{ section.settings.mobile_height }}px;"
 >
-  <svg
-    class="wave-divider__svg"
-    viewBox="0 0 1440 120"
-    preserveAspectRatio="none"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-    focusable="false"
-  >
-    <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,20 1440,60 L1440,120 L0,120 Z"></path>
-  </svg>
+  {%- if section.settings.flip_vertical -%}
+    {%- render 'wave', shape: 'above' -%}
+  {%- else -%}
+    {%- render 'wave', shape: 'below' -%}
+  {%- endif -%}
 </div>
 
 {%- style -%}
@@ -21,25 +16,27 @@
     background: transparent;
   }
 
-  .wave-divider__svg {
-    display: block;
-    width: 100%;
-    height: var(--wave-divider-height, 100px);
-  }
-
-  .wave-divider__svg path {
-    fill: rgb(var(--color-background));
-  }
-
-  .wave-divider--flipped .wave-divider__svg {
-    transform: scaleY(-1);
-  }
-
-  {%- if section.settings.overlap_previous_section %}
+  {%- if section.settings.overlap_previous_section or section.settings.overlap_next_section %}
     #shopify-section-{{ section.id }} {
       position: relative;
       z-index: 2;
-      margin-top: -{{ section.settings.height }}px;
+      {%- if section.settings.overlap_previous_section %}
+        margin-top: -{{ section.settings.height }}px;
+      {%- endif %}
+      {%- if section.settings.overlap_next_section %}
+        margin-bottom: -{{ section.settings.height }}px;
+      {%- endif %}
+    }
+
+    @media screen and (max-width: 749px) {
+      #shopify-section-{{ section.id }} {
+        {%- if section.settings.overlap_previous_section %}
+          margin-top: -{{ section.settings.mobile_height }}px;
+        {%- endif %}
+        {%- if section.settings.overlap_next_section %}
+          margin-bottom: -{{ section.settings.mobile_height }}px;
+        {%- endif %}
+      }
     }
   {%- endif %}
 {%- endstyle -%}
@@ -66,8 +63,18 @@
       "max": 300,
       "step": 10,
       "unit": "px",
-      "default": 100,
+      "default": 60,
       "label": "t:sections.wave-divider.settings.height.label"
+    },
+    {
+      "type": "range",
+      "id": "mobile_height",
+      "min": 10,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 30,
+      "label": "t:sections.wave-divider.settings.mobile_height.label"
     },
     {
       "type": "checkbox",
@@ -82,6 +89,13 @@
       "default": false,
       "label": "t:sections.wave-divider.settings.overlap_previous_section.label",
       "info": "t:sections.wave-divider.settings.overlap_previous_section.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "overlap_next_section",
+      "default": false,
+      "label": "t:sections.wave-divider.settings.overlap_next_section.label",
+      "info": "t:sections.wave-divider.settings.overlap_next_section.info"
     }
   ],
   "presets": [

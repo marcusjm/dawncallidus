@@ -132,6 +132,11 @@
     var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
 
+.image-with-text .image-with-text__text-item > .content-container--curved,
+.image-with-text:not(.image-with-text--overlap) .image-with-text__text-item:has(> .content-container--curved):after {
+  border-radius: var(--box-curve) 0 var(--box-curve) 0;
+}
+
 .image-with-text:not(.image-with-text--overlap) .image-with-text__media-item > *,
 .image-with-text:not(.image-with-text--overlap) .image-with-text__text-item > * {
   box-shadow: none;

@@ -62,7 +62,8 @@
         <div class="image-with-text__text-item grid__item">
           <div
             id="ImageWithText--{{ section.id }}"
-            class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
+            class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.box_shape == 'curved' %} content-container--curved{% endif %}"
+            {% if section.settings.box_shape == 'curved' %}style="--box-curve: {{ section.settings.box_curve_size }}px;"{% endif %}
           >
             {%- for block in section.blocks -%}
               {% case block.type %}
@@ -295,6 +296,33 @@
       "id": "color_scheme",
       "label": "t:sections.multirow.settings.container_color_scheme.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "box_shape",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.box_shape.options__1.label"
+        },
+        {
+          "value": "curved",
+          "label": "t:sections.all.box_shape.options__2.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.all.box_shape.label",
+      "info": "t:sections.all.box_shape.info"
+    },
+    {
+      "type": "range",
+      "id": "box_curve_size",
+      "min": 20,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60,
+      "label": "t:sections.all.box_curve_size.label"
     },
     {
       "type": "header",

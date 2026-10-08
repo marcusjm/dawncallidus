@@ -116,7 +116,10 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div
+      class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient{% if section.settings.box_shape == 'curved' %} content-container--curved{% endif %}"
+      {% if section.settings.box_shape == 'curved' %}style="--box-curve: {{ section.settings.box_curve_size }}px;"{% endif %}
+    >
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
@@ -316,6 +319,33 @@
       "id": "show_text_box",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_box.label"
+    },
+    {
+      "type": "select",
+      "id": "box_shape",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.box_shape.options__1.label"
+        },
+        {
+          "value": "curved",
+          "label": "t:sections.all.box_shape.options__2.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.all.box_shape.label",
+      "info": "t:sections.all.box_shape.info"
+    },
+    {
+      "type": "range",
+      "id": "box_curve_size",
+      "min": 20,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60,
+      "label": "t:sections.all.box_curve_size.label"
     },
     {
       "type": "color_scheme",
