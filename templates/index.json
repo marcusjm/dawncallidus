@@ -9,6 +9,30 @@
  */
 {
   "sections": {
+    "rich_text_pXHR7N": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_88HwfM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rent och gott vatten ur kranen",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_88HwfM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-8",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -237,6 +261,7 @@
     }
   },
   "order": [
+    "rich_text_pXHR7N",
     "image_banner",
     "wave_divider_PqYKAJ",
     "yellow_banner",
