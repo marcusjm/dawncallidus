@@ -53,16 +53,18 @@
         },
         "menu_about": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Mer om Callidus",
-            "menu": "footer-mer-om-callidus"
+            "menu": ""
           }
         },
         "menu_services": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Våra tjänster",
-            "menu": "footer-vara-tjanster"
+            "menu": ""
           }
         },
         "contact": {
