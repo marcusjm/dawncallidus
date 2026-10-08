@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Vi hjälper dig med vattenrening och att rena ditt vatten.",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "button": {
@@ -38,14 +38,14 @@
       "settings": {
         "image": "shopify://shop_images/callidus-kiss-lake-opt.jpg",
         "image_overlay_opacity": 30,
-        "image_height": "large",
+        "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "middle-left",
+        "desktop_content_position": "middle-right",
         "desktop_content_alignment": "left",
         "show_text_box": true,
         "box_shape": "curved",
         "box_curve_size": 60,
-        "color_scheme": "scheme-10",
+        "color_scheme": "scheme-9",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": false
@@ -56,8 +56,10 @@
       "settings": {
         "color_scheme": "scheme-3",
         "height": 90,
+        "mobile_height": 30,
         "flip_vertical": true,
-        "overlap_previous_section": false
+        "overlap_previous_section": false,
+        "overlap_next_section": false
       }
     },
     "yellow_banner": {
@@ -111,8 +113,10 @@
       "settings": {
         "color_scheme": "scheme-6",
         "height": 100,
+        "mobile_height": 30,
         "flip_vertical": true,
-        "overlap_previous_section": false
+        "overlap_previous_section": false,
+        "overlap_next_section": false
       }
     },
     "wave_divider_2": {
@@ -121,8 +125,10 @@
       "settings": {
         "color_scheme": "scheme-7",
         "height": 80,
+        "mobile_height": 30,
         "flip_vertical": false,
-        "overlap_previous_section": false
+        "overlap_previous_section": false,
+        "overlap_next_section": false
       }
     },
     "content_section": {
@@ -183,8 +189,10 @@
       "settings": {
         "color_scheme": "scheme-6",
         "height": 120,
+        "mobile_height": 30,
         "flip_vertical": true,
-        "overlap_previous_section": false
+        "overlap_previous_section": false,
+        "overlap_next_section": false
       }
     },
     "wave_divider_xxa3gW": {
@@ -193,8 +201,10 @@
       "settings": {
         "color_scheme": "scheme-6",
         "height": 160,
+        "mobile_height": 30,
         "flip_vertical": true,
-        "overlap_previous_section": true
+        "overlap_previous_section": true,
+        "overlap_next_section": false
       }
     },
     "featured_collection": {
