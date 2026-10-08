@@ -22,7 +22,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Vattenanalys",
+            "button_label_1": "",
             "button_link_1": "shopify://pages/vattenanalys",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -40,26 +40,24 @@
         "image_overlay_opacity": 30,
         "image_height": "large",
         "image_behavior": "none",
-        "desktop_content_position": "middle-right",
+        "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": true,
         "box_shape": "curved",
         "box_curve_size": 60,
         "color_scheme": "scheme-10",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
     "wave_divider_PqYKAJ": {
       "type": "wave-divider",
       "settings": {
-        "color_scheme": "scheme-6",
-        "height": 60,
-        "mobile_height": 25,
-        "flip_vertical": false,
-        "overlap_previous_section": true,
-        "overlap_next_section": false
+        "color_scheme": "scheme-3",
+        "height": 90,
+        "flip_vertical": true,
+        "overlap_previous_section": false
       }
     },
     "yellow_banner": {
@@ -97,10 +95,11 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-6",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 60
@@ -108,13 +107,22 @@
     },
     "wave_divider_1": {
       "type": "wave-divider",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-6",
-        "height": 60,
-        "mobile_height": 25,
+        "height": 100,
         "flip_vertical": true,
-        "overlap_previous_section": false,
-        "overlap_next_section": true
+        "overlap_previous_section": false
+      }
+    },
+    "wave_divider_2": {
+      "type": "wave-divider",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-7",
+        "height": 80,
+        "flip_vertical": false,
+        "overlap_previous_section": false
       }
     },
     "content_section": {
@@ -159,10 +167,11 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-7",
+        "color_scheme": "scheme-6",
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 60
@@ -170,13 +179,22 @@
     },
     "wave_divider_3": {
       "type": "wave-divider",
+      "disabled": true,
       "settings": {
-        "color_scheme": "scheme-7",
-        "height": 60,
-        "mobile_height": 25,
+        "color_scheme": "scheme-6",
+        "height": 120,
         "flip_vertical": true,
-        "overlap_previous_section": false,
-        "overlap_next_section": true
+        "overlap_previous_section": false
+      }
+    },
+    "wave_divider_xxa3gW": {
+      "type": "wave-divider",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-6",
+        "height": 160,
+        "flip_vertical": true,
+        "overlap_previous_section": true
       }
     },
     "featured_collection": {
@@ -184,9 +202,9 @@
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "Featured products",
+        "title": "Våra Vattenanalyser",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Callidus har arbetat med vattenanalyser i över 75 år och sitter på kunskaper som få andra.</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
@@ -194,14 +212,14 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-12",
-        "image_ratio": "adapt",
-        "image_shape": "default",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "blob",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
@@ -213,8 +231,10 @@
     "wave_divider_PqYKAJ",
     "yellow_banner",
     "wave_divider_1",
+    "wave_divider_2",
     "content_section",
     "wave_divider_3",
+    "wave_divider_xxa3gW",
     "featured_collection"
   ]
 }

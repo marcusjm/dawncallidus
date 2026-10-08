@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -302,7 +311,7 @@
       "new_estimated_total": "Nytt beräknat totalbelopp",
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Tullavgifter och skatter ingår. Rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",
       "duties_and_taxes_included_shipping_at_checkout_without_policy": "Tullavgifter och skatter ingår. Rabatter och fraktkostnad beräknas i kassan.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Skatter ingår. Rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Skatter ingår och Frakt ingår",
       "taxes_included_shipping_at_checkout_without_policy": "Skatter ingår. Rabatter och fraktkostnad beräknas i kassan.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Tullavgifter ingår. Skatter, rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Tullavgifter ingår. Skatter, rabatter och fraktkostnad beräknas i kassan.",
