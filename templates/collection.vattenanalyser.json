@@ -24,6 +24,8 @@
             "link": "",
             "button_style_secondary": false,
             "show_text_box": true,
+            "box_shape": "default",
+            "box_curve_size": 60,
             "box_align": "middle-right",
             "text_alignment": "left",
             "text_alignment_mobile": "left",
@@ -48,12 +50,15 @@
     },
     "wave_divider_Yr7d8z": {
       "type": "wave-divider",
+      "disabled": true,
       "name": "t:sections.wave-divider.presets.name",
       "settings": {
         "color_scheme": "scheme-6",
         "height": 100,
+        "mobile_height": 30,
         "flip_vertical": true,
-        "overlap_previous_section": false
+        "overlap_previous_section": false,
+        "overlap_next_section": false
       }
     },
     "rich_text_7Y3Gkb": {
