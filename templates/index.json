@@ -69,7 +69,7 @@
         "show_text_box": true,
         "box_shape": "curved",
         "box_curve_size": 60,
-        "color_scheme": "scheme-8",
+        "color_scheme": "scheme-c06a4bda-9610-4560-b0bf-b1cc7134d499",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": false
