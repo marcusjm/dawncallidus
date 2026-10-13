@@ -3035,6 +3035,15 @@ details-disclosure > details {
   fill: rgb(var(--color-background));
 }
 
+.wave--ribbon .wave__fill,
+.wave--ribbon .wave__lens {
+  fill: rgb(var(--wave-fill, var(--color-background)));
+}
+
+.wave--ribbon .wave__lens {
+  fill-opacity: 0.65;
+}
+
 @media screen and (max-width: 749px) {
   .wave {
     height: var(--wave-height-mobile, var(--wave-height, 30px));

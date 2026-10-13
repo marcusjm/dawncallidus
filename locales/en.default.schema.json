@@ -1073,10 +1073,10 @@
         },
         "show_top_wave": {
           "label": "Show wave above footer",
-          "info": "Adds a layered wave along the top edge of the footer. Pick the color of the section above so it flows into the footer."
+          "info": "Adds a wave in the footer's color that rises over the bottom of the section above, with a ribbon riding on its crest."
         },
         "top_wave_color_scheme": {
-          "label": "Wave color"
+          "label": "Ribbon color"
         },
         "top_wave_height": {
           "label": "Wave height"

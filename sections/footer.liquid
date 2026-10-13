@@ -29,11 +29,13 @@
   {%- if section.settings.show_top_wave %}
     .footer {
       position: relative;
+      z-index: 1;
+      --wave-fill: var(--color-background);
     }
 
     .footer .footer__wave {
       position: absolute;
-      top: 0;
+      bottom: calc(100% - 1px);
       left: 0;
       width: 100%;
       line-height: 0;
@@ -78,7 +80,7 @@
       class="footer__wave color-{{ section.settings.top_wave_color_scheme }}"
       style="--wave-height: {{ section.settings.top_wave_height }}px; --wave-height-mobile: {{ section.settings.top_wave_height | times: 0.5 | round }}px;"
     >
-      {%- render 'wave', shape: 'above' -%}
+      {%- render 'wave', shape: 'ribbon' -%}
     </div>
   {%- endif -%}
   {%- liquid
@@ -514,7 +516,7 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "default": 50,
+      "default": 80,
       "label": "t:sections.footer.settings.top_wave_height.label"
     },
     {
