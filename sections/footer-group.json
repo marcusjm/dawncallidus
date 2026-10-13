@@ -35,10 +35,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-12",
+        "color_scheme": "scheme-7",
         "full_width": true,
         "padding_top": 60,
-        "padding_bottom": 110
+        "padding_bottom": 40
       }
     },
     "footer": {
@@ -86,7 +86,7 @@
         "center_content": true,
         "show_top_wave": true,
         "top_wave_color_scheme": "scheme-8",
-        "top_wave_height": 80,
+        "top_wave_height": 50,
         "newsletter_enable": false,
         "newsletter_heading": "Prenumerera på vårt nyhetsbrev",
         "enable_follow_on_shop": false,
@@ -96,7 +96,7 @@
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 48,
+        "padding_top": 96,
         "padding_bottom": 24
       }
     }
