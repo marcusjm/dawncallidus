@@ -10,6 +10,7 @@
 {
   "current": {
     "logo_width": 90,
+    "favicon": "shopify://shop_images/callidus-icon.jpg",
     "type_header_font": "open_sans_n4",
     "heading_scale": 100,
     "type_body_font": "open_sans_n4",
@@ -302,7 +303,7 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "linear-gradient(127deg, rgba(0, 134, 114, 1) 11%, rgba(87, 154, 205, 1) 81%)",
-          "text": "#FFFFFF",
+          "text": "#ffffff",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
