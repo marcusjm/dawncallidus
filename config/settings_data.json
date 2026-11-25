@@ -145,7 +145,7 @@
     "blocks": {
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "greeting_message": "",
           "show_featured_products": true,
@@ -165,6 +165,11 @@
           "agent_activator_font_size": 16,
           "agent_border_radius": 0
         }
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
